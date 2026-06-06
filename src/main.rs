@@ -424,10 +424,7 @@ impl Config {
         let link_id = required(&values, "POPBILL_LINK_ID")?;
         let secret_key = required(&values, "POPBILL_SECRET_KEY")?;
         let corp_num = required(&values, "POPBILL_CORP_NUM")?;
-        let user_id = values
-            .get("POPBILL_USER_ID")
-            .cloned()
-            .unwrap_or_else(|| "hostingglobal".to_string());
+        let user_id = required(&values, "POPBILL_USER_ID")?;
 
         Ok(Self {
             link_id,

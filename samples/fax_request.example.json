@@ -1,6 +1,6 @@
 {
   "sender": "0212345678",
-  "senderName": "Hostingglobal",
+  "senderName": "Example Sender",
   "title": "Popbill fax dry-run sample",
   "adsYN": false,
   "reserveDT": "",
@@ -13,6 +13,6 @@
     }
   ],
   "files": [
-    "/mnt/c/Users/David/Desktop/팝빌_fax_api.pdf"
+    "samples/sample-fax.txt"
   ]
 }

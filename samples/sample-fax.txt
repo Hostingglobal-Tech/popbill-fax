@@ -1,0 +1,7 @@
+Popbill fax dry-run sample.
+
+Use this file only to verify request parsing with:
+
+  popbill-fax dry-run --request samples/fax_request.example.json
+
+For real fax sends, attach a production document such as PDF, JPG, or TIFF.
