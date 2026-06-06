@@ -1,0 +1,16 @@
+/target/
+/config.toml
+/.env
+/.env.*
+!/env.example
+/logs/
+/*.receipt.json
+# creds/secret (secret-protection 하드룰 — 평문 커밋 금지)
+config.toml
+*.secret
+*.token
+samples/*.pdf
+samples/*.hwp
+
+# 실제 발송 문서 (business 데이터 — public 제외)
+requests/

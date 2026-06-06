@@ -1,0 +1,24 @@
+# Popbill FAX configuration template.
+# Copy to config.toml or ~/.config/popbill-fax/config.toml.
+# Do not commit real secret values.
+
+link_id = "HOSTINGGB"
+secret_key = "<LINKHUB SecretKey base64>"
+corp_num = "5038181331"
+user_id = "hostingglobal"
+is_test = false
+
+ip_restrict = true
+use_static_ip = false
+use_local_time = true
+use_ga_ip = false
+
+# Existing Telegram approval server. Actual fax send waits for allow.
+approval_url = "http://127.0.0.1:5510"
+approval_timeout_secs = 600
+
+# Optional physical siren status page.
+# UNO R4 relay_siren firmware exposes JSON on http://<device-ip>/.
+# If set, actual fax send waits until approvalPending/siren becomes true.
+siren_status_url = ""
+siren_wait_secs = 12

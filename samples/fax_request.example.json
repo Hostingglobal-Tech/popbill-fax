@@ -1,0 +1,18 @@
+{
+  "sender": "0212345678",
+  "senderName": "Hostingglobal",
+  "title": "Popbill fax dry-run sample",
+  "adsYN": false,
+  "reserveDT": "",
+  "requestNum": "",
+  "receivers": [
+    {
+      "receiveNum": "0211112222",
+      "receiveName": "sample receiver",
+      "interOPRefKey": "sample-001"
+    }
+  ],
+  "files": [
+    "/mnt/c/Users/David/Desktop/팝빌_fax_api.pdf"
+  ]
+}
